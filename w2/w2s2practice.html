@@ -9,18 +9,12 @@
     <link rel="stylesheet" type="text/css" href="/style.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #9d7d7d;
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
 
         .header-class h1 {
             margin: 0;
@@ -36,7 +30,7 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #7d6c6c;
         }
 
         .navigation-menu li {
@@ -51,24 +45,38 @@
         }
 
         .navigation-menu a:hover {
-            background-color: #555;
+            background-color: #6f1919;
+            color: #f0f0f0;
         }
 
         /* Enhance Menu Section */
         .menu-item {
-            border: 1px solid #ddd;
+            border: 1px solid #600d0d;
             padding: 10px;
             margin: 10px;
-            background-color: #fff;
+            background-color: #e4dada;
+            text-align: center;
         }
 
-        .menu-item a {
-            color: #333;
-            text-decoration: none;
+
+        .left-aligned-img {
+            float:left
+            margin-right:10px; /* Optional: Set a margin to create some space around the image */
         }
 
-        .menu-item a:hover {
-            color: #555;
+        .left-aligned-img img:hover {
+            border-color: #a47676; /* Change border color on hover */
+            opacity: 0.8; /* Change opacity on hover */
+        }
+
+        footer {
+            background-color: #634646; /* Choose your desired background color */
+            color: #fff; /* Text color */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -78,17 +86,55 @@
     <header class="header-class">
         <h1>Ramen</h1>
         <!-- Navigation menu -->
-        <h2 style="text-align: center; color: black; font-weight:bolder">Our Menu</h2>
-        <nav>
-            <ul class="navigation-menu">
-                <li class="menu-item"><a href="about.html">Menu</a></li>
-                <li><img src="https://img0.baidu.com/it/u=678912815,3321314010&fm=253&fmt=auto&app=138&f=JPEG?w=50&h=50" alt="Logo"width="200px" height="200px"
-                    ></li>
-                <li class="menu-item"><a href="contact.html">Contact</a></li>
+        <h2 style="text-align: center; color: black; font-weight:bolder"><h2 style="text-align: center; color: black; font-weight:bolder"><a href="about.html" style="text-decoration:underline; color: black;">Menu</a></h2>
+        <nav> 
+         <ul class="navigation-menu">
+          
+            <li class="left-aligned-img">
+                <img src="https://img0.baidu.com/it/u=678912815,3321314010&fm=253&fmt=auto&app=138&f=JPEG?w=50&h=50" alt="Logo" width="200px" height="200px">
+             <h3 style="text-align: left 10px; color: rgb(85, 7, 7); font-weight:bolder">Classic - £8.99</h3>
+            </li>
+            <li class="left-aligned-img">
+                <img src="https://img0.baidu.com/it/u=1589721617,4123888820&fm=253&fmt=auto&app=138&f=JPEG?w=540&h=360" alt="ramen" alt="Logo" width="200px" height="200px">
+            <h3 style="text-align: left 10px; color: rgb(85, 7, 7); font-weight:bolder">Seafood- £12.99</h3>
+            </li>
+            
             </ul>
+
         </nav>
+
+        
         <!-- Other header content goes here -->
     </header>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Opening Hours</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday-Friday</td>
+                <td>11:00 AM - 10:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>11:00 AM - 23:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Sunday</td>
+                <td>12:00 AM - 9:00 PM</td>
+            
+            <!-- Add more rows for other days if needed -->
+        </tbody>
+    </table>
+
+    <footer>
+        &copy; 2024 Ramen Restaurant
+    </footer>
 
     <!-- Your HTML content goes here -->
 
